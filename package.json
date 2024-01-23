@@ -1,6 +1,6 @@
 {
   "name": "ts-animal",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,5 +17,6 @@
   },
   "devDependencies": {
     "@types/charm": "^1.0.6"
-  }
+  },
+  "bin": "./bin.sh"
 }

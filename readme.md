@@ -4,5 +4,8 @@
 # show start
 ```shell
   pnpm i
-  pnpm show:tiger
+  npx ts-animal {animal}
+  
+  # ex
+  npx ts-animal tiger
 ```
