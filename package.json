@@ -1,16 +1,18 @@
 {
   "name": "ts-animal",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "show:tiger": "ts-node src/tiger/tiger.ts"
+    "show:tiger": "ts-node src/tiger/tiger.ts",
+    "show:rabbit": "ts-node src/rabbit/rabbit.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^4.1.2",
     "charm": "^1.0.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"

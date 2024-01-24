@@ -1,5 +1,6 @@
 # Ascii Ref
 - tiger: https://asciiart.cc/view/12694
+- rabbit: https://bento.me/tolluset
 
 # show start
 ```shell
@@ -8,4 +9,5 @@
   
   # ex
   npx ts-animal tiger
+  npx ts-animal rabbit
 ```
