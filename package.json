@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "show:tiger": "ts-node src/tiger/tiger.ts"
+    "show:tiger": "ts-node src/tiger/tiger.ts",
+    "show:rabbit":"ts-node src/rabbit/rabbit.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.3.0",
     "charm": "^1.0.2",
+    "figlet": "^1.7.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
