@@ -6,7 +6,6 @@
 
 ---
 ![ascii_terminal_tiger](https://github.com/ts-animal/ts-animal/assets/33365719/48218f8c-2bbc-41fc-845f-dcf6914ad0bd)
----
 
 ## Introduction
 
