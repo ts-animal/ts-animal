@@ -15,35 +15,30 @@
 - tiger: https://asciiart.cc/view/12694
 - rabbit: https://bento.me/tolluset
 
-## Installation
-
-```shell
-npm i -g ts-animal
-```
-
 ## Getting started
 
 ```shell
-ts-animal tiger
+npx ts-animal tiger
 ```
 
 ## Run locally with repository 
 
 ```shell
   pnpm i
-  npx ts-animal {animal}
+  pnpm show:{animal}
   
   # ex
-  npx ts-animal tiger
-  npx ts-animal rabbit
+  pnpm show:tiger
+  pnpm show:rabbit
 ```
 
-# options
+## Options
+
 ```shell
    npx ts-animal tiger  --repeat=3 --speed=1800
 ```
 
-# contribute
+## How to contribute
 - make animal named folder in src/zoo.
 - make frames as text files in zoo folder. No matter txt files name, but make sure files name and frames are sorted. 
 - please check first npx run list, to prevent duplicated name.
