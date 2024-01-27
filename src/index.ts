@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { AnimalGenerator } from './animal-generator';
 import { CharmPrinter } from './abstract/charm.printer';
 import { OptionArgvHelper } from './helper/option.argv.helper';
