@@ -8,8 +8,20 @@
 ![ascii_terminal_tiger](https://github.com/ts-animal/ts-animal/assets/33365719/48218f8c-2bbc-41fc-845f-dcf6914ad0bd)
 ---
 
+## Introduction
+
+`ts-animal` is a sophisticated Command Line Interface (CLI) package designed to showcase captivating ASCII animation art within the animal category. We invite you to immerse yourself in our TypeScript-powered animal world, where creativity meets technology. Welcome to a realm where animated artistry comes to life in the command line environment. 🌐🦁
+
+## Our animals
+
 - tiger: https://asciiart.cc/view/12694
 - rabbit: https://bento.me/tolluset
+
+## Installation
+
+```shell
+npm i -g ts-animal
+```
 
 # show start
 ```shell
