@@ -15,27 +15,33 @@
 - tiger: https://asciiart.cc/view/12694
 - rabbit: https://bento.me/tolluset
 
+## Installation
+
+```shell
+$ npm i -g ts-animal
+```
+
 ## Getting started
 
 ```shell
-npx ts-animal tiger
+$ ts-animal tiger
 ```
 
 ## Run locally with repository 
 
 ```shell
-  pnpm i
-  pnpm show:{animal}
+$ pnpm i
+$ pnpm show:{animal}
   
-  # ex
-  pnpm show:tiger
-  pnpm show:rabbit
+# ex
+$ pnpm show:tiger
+$ pnpm show:rabbit
 ```
 
 ## Options
 
 ```shell
-   npx ts-animal tiger  --repeat=3 --speed=1800
+$ ts-animal tiger --repeat=3 --speed=1800
 ```
 
 ## How to contribute
