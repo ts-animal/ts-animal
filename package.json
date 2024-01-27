@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "show:tiger": "ts-node src/tiger/tiger.ts",
-    "show:rabbit": "ts-node src/rabbit/rabbit.ts"
+    "show:tiger": "ts-node src/index.ts tiger"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +17,11 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@types/charm": "^1.0.6"
+    "@types/charm": "^1.0.6",
+    "prettier": "^3.0.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0"
   },
   "bin": "./bin.sh"
 }

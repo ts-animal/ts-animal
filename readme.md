@@ -38,6 +38,16 @@ ts-animal tiger
   npx ts-animal rabbit
 ```
 
+# options
+```shell
+   npx ts-animal tiger  --repeat=3 --speed=1800
+```
+
+# contribute
+- make animal named folder in src/zoo.
+- make frames as text files in zoo folder. No matter txt files name, but make sure files name and frames are sorted. 
+- please check first npx run list, to prevent duplicated name.
+
 ## Stay in touch
 E-mail - team.ts.animal@gmail.com
 
