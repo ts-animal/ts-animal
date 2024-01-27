@@ -30,6 +30,7 @@ export class AnimalGenerator {
 
   run() {
     let i = 0;
+
     const interval = setInterval(
       () => {
         this.printer.clearTerminal();
@@ -42,7 +43,7 @@ export class AnimalGenerator {
           clearInterval(interval);
         }
       },
-      2000 - this.option.speed ?? 200,
+      2000 - (this.option.speed ?? 200),
     );
   }
 }
