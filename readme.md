@@ -24,24 +24,24 @@ $ npm i -g ts-animal
 ## Getting started
 
 ```shell
-$ ts-animal tiger
+$ ts-animal dance tiger
 ```
 
 ## Run locally with repository 
 
 ```shell
 $ pnpm i
-$ pnpm show:{animal}
+$ pnpm dance {animal}
   
 # ex
-$ pnpm show:tiger
-$ pnpm show:rabbit
+$ pnpm dance tiger
+$ pnpm dance rabbit
 ```
 
 ## Options
 
 ```shell
-$ ts-animal tiger --repeat=3 --speed=1800
+$ ts-animal dance tiger --repeat=3 --speed=1800
 ```
 
 ## How to contribute

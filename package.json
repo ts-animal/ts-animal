@@ -6,7 +6,7 @@
   "scripts": {
     "script:publish": "tsc && npm publish && git clean -df",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "show:tiger": "ts-node src/index.ts tiger"
+    "dance": "ts-node src/index.ts dance"
   },
   "keywords": [],
   "author": "",
