@@ -49,6 +49,12 @@ $ ts-animal tiger --repeat=3 --speed=1800
 - make frames as text files in zoo folder. No matter txt files name, but make sure files name and frames are sorted. 
 - please check first npx run list, to prevent duplicated name.
 
+## How to publish
+
+```shell
+$ pnpm script:publish
+```
+
 ## Stay in touch
 E-mail - team.ts.animal@gmail.com
 
