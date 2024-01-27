@@ -21,7 +21,14 @@
 npm i -g ts-animal
 ```
 
-# show start
+## Getting started
+
+```shell
+ts-animal tiger
+```
+
+## Run locally with repository 
+
 ```shell
   pnpm i
   npx ts-animal {animal}
@@ -30,3 +37,9 @@ npm i -g ts-animal
   npx ts-animal tiger
   npx ts-animal rabbit
 ```
+
+## Stay in touch
+E-mail - team.ts.animal@gmail.com
+
+## License
+ts-animal with [MIT licensed](LICENSE).
