@@ -1,7 +1,7 @@
 import { ColorType } from './color.type';
 
-export type OptionType = {
-  repeat?: number;
-  speed?: number;
+export class OptionType {
+  repeat? = Infinity;
+  speed? = 1800;
   color?: ColorType | 'random';
-};
+}
