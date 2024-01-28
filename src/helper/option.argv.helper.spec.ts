@@ -6,7 +6,11 @@ describe('OptionArgvHelper', () => {
     const argv = [''];
 
     const result: OptionType = OptionArgvHelper(argv);
-    expect(result).toEqual({});
+    expect(result).toEqual({
+      color: 'white',
+      repeat: Infinity,
+      speed: 1800,
+    });
   });
 
   test('it should parse single argument correctly', () => {
@@ -14,7 +18,11 @@ describe('OptionArgvHelper', () => {
 
     const result: OptionType = OptionArgvHelper(argv);
 
-    expect(result).toEqual({ speed: '200' });
+    expect(result).toEqual({
+      color: 'white',
+      repeat: Infinity,
+      speed: '200',
+    });
   });
 
   test('it should parse multiple arguments correctly', () => {
@@ -22,7 +30,11 @@ describe('OptionArgvHelper', () => {
 
     const result: OptionType = OptionArgvHelper(argv);
 
-    expect(result).toEqual({ speed: '200', repeat: '3' });
+    expect(result).toEqual({
+      color: 'white',
+      speed: '200',
+      repeat: '3',
+    });
   });
 
   // 🏗️ on progress on #6, #20 🏗️

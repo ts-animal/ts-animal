@@ -3,7 +3,6 @@ import * as path from 'path';
 import { listHelper, SRC_FOLDER } from './helper/list.helper';
 import { IPrinter } from './abstract/printer.interface';
 import { OptionType } from './type/option.type';
-
 export class AnimalGenerator {
   frames = [];
 
@@ -25,6 +24,14 @@ export class AnimalGenerator {
       this.frames.push(
         fs.readFileSync(path.join(animalPath, filePath), 'utf8'),
       );
+    }
+  }
+
+  setColor() {
+    if (this.option.color === 'random') {
+      this.printer.randomColor = true;
+    } else {
+      this.printer.color = this.option.color;
     }
   }
 

@@ -7,7 +7,7 @@
     "script:publish": "tsc && npm publish && git clean -df",
     "test": "jest",
     "test:watch": "jest --watch",
-    "show:tiger": "ts-node src/index.ts tiger"
+    "dance": "ts-node src/index.ts dance"
   },
   "keywords": [],
   "author": "",
