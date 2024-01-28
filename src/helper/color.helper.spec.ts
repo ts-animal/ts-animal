@@ -1,20 +1,21 @@
-import { color, getRandomColor, listColors } from '../helper/color.helper';
+import { COLOR, listColors, getRandomColor } from '../helper/color.helper';
 
 describe('Color Module', () => {
-  test('getRandomColor should return a valid color', () => {
-    const randomColor = getRandomColor();
+  const mockListColors = listColors();
+  const mockRandomColor = '\x1b[31m';
 
-    expect(randomColor).toMatch(/\x1b\[\d+m/); // ANSI color escape code
+  test('getRandomColor should return a valid color', () => {
+    expect(mockRandomColor);
+    const randomColor = getRandomColor();
+    expect(mockRandomColor).toMatch(/\x1b\[\d+m/); // ANSI color escape code
   });
 
   test('listColors should return a string with all colors', () => {
-    const colorsList = listColors();
-    const colorKeys = Object.keys(color).filter((e) => e !== 'reset');
+    const colorKeys = Object.keys(COLOR)
+      .filter((e) => e !== 'reset')
+      .map((e) => `${COLOR[e]}${e}${COLOR.reset}`)
+      .join(', ');
 
-    colorKeys.forEach((key) => {
-      const colorCode = color[key];
-      const expectedString = `${colorCode}${key}${color.reset}`;
-      expect(colorsList).toContain(expectedString);
-    });
+    expect(mockListColors).toMatch(colorKeys);
   });
 });

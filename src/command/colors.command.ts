@@ -1,5 +1,8 @@
 import { listColors } from '../helper/color.helper';
 
 export function colors() {
-  console.log(listColors());
+  const print = listColors();
+  console.log(print);
+
+  return print;
 }

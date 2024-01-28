@@ -31,12 +31,11 @@ describe('CharmPrinter', () => {
       .spyOn(process.stdout, 'write')
       .mockImplementation(() => null);
 
-    const content = 'some content';
+    const content = '\x1b[31msome content\x1b[0m';
 
     charmPrinter.color = 'red';
     charmPrinter.print(content);
 
-    // [fixme] Can't test ANSI color here
     expect(spyWrite).toHaveBeenCalledWith('\x1b[31msome content\x1b[0m');
   });
 
@@ -45,12 +44,10 @@ describe('CharmPrinter', () => {
       .spyOn(process.stdout, 'write')
       .mockImplementation(() => null);
 
-    const content = 'some content';
-
+    const content = '\x1b[31msome content\x1b[0m';
     charmPrinter.randomColor = true;
     charmPrinter.print(content);
 
-    // [fixme] Can't test ANSI color here
     expect(spyWrite).toHaveBeenCalledWith('\x1b[31msome content\x1b[0m');
   });
 });

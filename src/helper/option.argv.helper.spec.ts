@@ -1,8 +1,10 @@
+import { execSync, exec } from 'child_process';
 import { OptionType } from '../type/option.type';
 import { OptionArgvHelper } from './option.argv.helper';
+import * as helpCommand from '../command/help.command';
 
 describe('OptionArgvHelper', () => {
-  test('it should skip arguments with no options', () => {
+  test('should skip arguments with no options', () => {
     const argv = [''];
 
     const result: OptionType = OptionArgvHelper(argv);
@@ -13,7 +15,7 @@ describe('OptionArgvHelper', () => {
     });
   });
 
-  test('it should parse single argument correctly', () => {
+  test('should parse single argument correctly', () => {
     const argv = ['--speed=200'];
 
     const result: OptionType = OptionArgvHelper(argv);
@@ -25,7 +27,7 @@ describe('OptionArgvHelper', () => {
     });
   });
 
-  test('it should parse multiple arguments correctly', () => {
+  test('should parse multiple arguments correctly', () => {
     const argv = ['--speed=200', '--repeat=3'];
 
     const result: OptionType = OptionArgvHelper(argv);
@@ -37,12 +39,11 @@ describe('OptionArgvHelper', () => {
     });
   });
 
-  // 🏗️ on progress on #6, #20 🏗️
-  // test('it should skip no-option arguments', () => {
-  //   const argv = ['--speed=200', '--repeat=3', '--cat=meow'];
+  test('should log the animal exist', () => {
+    const { stderr } = exec(`ts-node src/index.ts tiger --unknownOption`, {
+      encoding: 'utf8',
+    });
 
-  //   const result: OptionType = OptionArgvHelper(argv);
-
-  //   expect(result).toEqual({ speed: '200', repeat: '3' });
-  // });
+    expect(stderr).not.toBeNull();
+  });
 });
