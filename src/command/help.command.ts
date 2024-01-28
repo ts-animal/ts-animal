@@ -7,7 +7,7 @@ dance {animal} {option}     show animal ascii animation.
 list                        show current animal list.
 help                        show current this helping message. 
 version                     show ts-animal version.
-colors                      show colors
+colors                      show supported colors.
   `;
 
   console.log(msg);
