@@ -6,7 +6,7 @@
     "^.+\\.(t|j)s$": "ts-jest"
   },
   "collectCoverageFrom": ["**/*.ts"],
-  "coveragePathIgnorePatterns": [".*\\.spec\\.ts$"],
+  "coveragePathIgnorePatterns": [".*\\.spec\\.ts$", ".*\\.type\\.ts$"],
   "testEnvironment": "node",
   "coverageDirectory": "../coverage"
 }
