@@ -8,7 +8,6 @@ export type ColorType =
   | 'magenta'
   | 'cyan'
   | 'white'
-  | 'brightBlack'
   | 'brightRed'
   | 'brightGreen'
   | 'brightYellow'

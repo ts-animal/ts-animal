@@ -10,7 +10,6 @@ export const color: Record<ColorType, string> = {
   magenta: '\x1b[35m',
   cyan: '\x1b[36m',
   white: '\x1b[37m',
-  brightBlack: '\x1b[90m',
   brightRed: '\x1b[91m',
   brightGreen: '\x1b[92m',
   brightYellow: '\x1b[93m',
@@ -31,4 +30,11 @@ export function getRandomColor() {
     colorKeys[Math.floor(Math.random() * colorKeys.length)];
 
   return color[randomColorKey];
+}
+
+export function listColors() {
+  return Object.keys(color)
+    .filter((e) => e !== 'reset')
+    .map((e) => `${color[e]}${e}${color.reset}`)
+    .join(', ');
 }
