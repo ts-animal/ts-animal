@@ -17,18 +17,6 @@ export class CharmPrinter implements IPrinter {
   }
 
   print(content: string) {
-    if (this.color) content = this.colorize(this.color, content);
-    if (this.randomColor) content = this.randomColorize(content);
-
     this.printer.write(content);
-  }
-
-  randomColorize(content: string) {
-    const randomColor = getRandomColor();
-    return `${randomColor}${content}${color.reset}`;
-  }
-
-  colorize(type: ColorType, content: string) {
-    return `${color[type]}${content}${color.reset}`;
   }
 }
