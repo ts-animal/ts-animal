@@ -16,6 +16,7 @@ function main(animal: string) {
   );
 
   generator.setFrames();
+  generator.setColor();
   generator.run();
 }
 
