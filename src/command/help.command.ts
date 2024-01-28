@@ -1,0 +1,12 @@
+export function help() {
+  const msg = `
+dance {animal} {option}     show animal ascii animation.
+    --speed=[0~2000]        frame speed.
+    --repeat=[1~...]        repeat times. default is infinite.
+list                        show current animal list.
+help                        show current this helping message. 
+version                     show ts-animal version.
+  `;
+
+  console.log(msg);
+}
