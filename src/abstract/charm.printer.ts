@@ -1,8 +1,12 @@
-import { IPrinter } from './printer.interface';
 import * as Charm from 'charm';
+import { IPrinter } from './printer.interface';
+import { ColorType } from '../type/color.type';
+import { COLOR, getRandomColor } from '../helper/color.helper';
 
 export class CharmPrinter implements IPrinter {
   printer = Charm();
+  color: ColorType | null = null;
+  randomColor = false;
 
   constructor() {
     this.printer.pipe(process['stdout']);
