@@ -1,6 +1,6 @@
 import { ColorType } from '../type/color.type';
 
-export const color: Record<ColorType, string> = {
+export const COLOR: Record<ColorType, string> = {
   reset: '\x1b[0m',
   black: '\x1b[30m',
   red: '\x1b[31m',
@@ -19,22 +19,23 @@ export const color: Record<ColorType, string> = {
   brightWhite: '\x1b[97m',
 };
 
-export function getRandomColor() {
-  const colorKeys = Object.keys(color).filter(
-    (key) =>
-      key !== 'reset' &&
-      !key.toLowerCase().includes('black') &&
-      !key.toLowerCase().includes('white'),
-  );
-  const randomColorKey =
-    colorKeys[Math.floor(Math.random() * colorKeys.length)];
+const COLOR_KEYS = Object.keys(COLOR).filter(
+  (key) =>
+    key !== 'reset' &&
+    !key.toLowerCase().includes('black') &&
+    !key.toLowerCase().includes('white'),
+);
 
-  return color[randomColorKey];
+export function getRandomColor() {
+  const randomColorKey =
+    COLOR_KEYS[Math.floor(Math.random() * COLOR_KEYS.length)];
+
+  return COLOR[randomColorKey];
 }
 
 export function listColors() {
-  return Object.keys(color)
+  return Object.keys(COLOR)
     .filter((e) => e !== 'reset')
-    .map((e) => `${color[e]}${e}${color.reset}`)
+    .map((e) => `${COLOR[e]}${e}${COLOR.reset}`)
     .join(', ');
 }

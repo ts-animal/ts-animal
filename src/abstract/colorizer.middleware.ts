@@ -1,13 +1,13 @@
-import { color, getRandomColor } from '../helper/color.helper';
+import { COLOR, getRandomColor } from '../helper/color.helper';
 import { ColorType } from '../type/color.type';
 
 export class Colorizer {
   static randomColorize(content: string) {
     const randomColor = getRandomColor();
-    return `${randomColor}${content}${color.reset}`;
+    return `${randomColor}${content}${COLOR.reset}`;
   }
 
   static colorize(type: ColorType, content: string) {
-    return `${color[type]}${content}${color.reset}`;
+    return `${COLOR[type]}${content}${COLOR.reset}`;
   }
 }
