@@ -1,0 +1,9 @@
+.github
+
+CODE_OF_CONDUCT.md
+
+.eslintrc.js
+.prettierrc
+tsconfig.json
+
+src/**/*.ts
