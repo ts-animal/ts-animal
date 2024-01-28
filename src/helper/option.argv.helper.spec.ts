@@ -1,7 +1,6 @@
-import { execSync, exec } from 'child_process';
+import { exec } from 'child_process';
 import { OptionType } from '../type/option.type';
 import { OptionArgvHelper } from './option.argv.helper';
-import * as helpCommand from '../command/help.command';
 
 describe('OptionArgvHelper', () => {
   test('should skip arguments with no options', () => {
@@ -39,11 +38,18 @@ describe('OptionArgvHelper', () => {
     });
   });
 
-  test('should log the animal exist', () => {
-    const { stderr } = exec(`ts-node src/index.ts tiger --unknownOption`, {
-      encoding: 'utf8',
-    });
+  test('should log the animal exist', (done) => {
+    exec(
+      'ts-node src/index.ts tiger --unknownOption',
+      { encoding: 'utf8' },
+      (error) => {
+        if (error) {
+          done.fail(error);
+          return;
+        }
 
-    expect(stderr).not.toBeNull();
+        done();
+      },
+    );
   });
 });

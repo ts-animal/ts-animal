@@ -27,7 +27,6 @@ describe('dance command', () => {
     expect(OptionArgvHelper).toHaveBeenCalledTimes(1);
   });
 
-  // execute the command with child_process
   test('should log the animal exist', () => {
     const result = execSync(`ts-node src/index.ts ${mockAnimal} --repeat=1`, {
       encoding: 'utf8',

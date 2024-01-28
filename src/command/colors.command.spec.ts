@@ -29,7 +29,6 @@ describe('colors command', () => {
     expect(returns).toEqual(mockColorsList);
   });
 
-  // execute the command with child_process
   test('should log the colors to the console', () => {
     const result = execSync('ts-node src/index.ts colors', {
       encoding: 'utf8',
