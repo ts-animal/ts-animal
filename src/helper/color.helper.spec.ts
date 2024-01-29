@@ -5,7 +5,6 @@ describe('Color Module', () => {
   const mockRandomColor = '\x1b[31m';
 
   test('getRandomColor should return a valid color', () => {
-    expect(mockRandomColor);
     expect(mockRandomColor).toMatch(/\x1b\[\d+m/); // ANSI color escape code
   });
 

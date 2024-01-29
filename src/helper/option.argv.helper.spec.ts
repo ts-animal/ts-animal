@@ -38,7 +38,7 @@ describe('OptionArgvHelper', () => {
     });
   });
 
-  test('should log the animal exist', (done) => {
+  test('should throw error when animal does not exist', (done) => {
     exec(
       'ts-node src/index.ts tiger --unknownOption',
       { encoding: 'utf8' },
