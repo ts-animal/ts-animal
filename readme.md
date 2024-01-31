@@ -24,30 +24,36 @@ $ npm i -g ts-animal
 ## Getting started
 
 ```shell
-$ ts-animal tiger
+$ ts-animal dance tiger
 ```
 
 ## Run locally with repository 
 
 ```shell
 $ pnpm i
-$ pnpm show:{animal}
+$ pnpm dance {animal}
   
 # ex
-$ pnpm show:tiger
-$ pnpm show:rabbit
+$ pnpm dance tiger
+$ pnpm dance rabbit
 ```
 
 ## Options
 
 ```shell
-$ ts-animal tiger --repeat=3 --speed=1800
+$ ts-animal dance tiger --repeat=3 --speed=1800
 ```
 
 ## How to contribute
 - make animal named folder in src/zoo.
 - make frames as text files in zoo folder. No matter txt files name, but make sure files name and frames are sorted. 
 - please check first npx run list, to prevent duplicated name.
+
+## How to publish
+
+```shell
+$ pnpm script:publish
+```
 
 ## Stay in touch
 E-mail - team.ts.animal@gmail.com
