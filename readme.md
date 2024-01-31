@@ -54,7 +54,6 @@ $ ts-animal tiger --repeat=3 --speed=1800
   <img src="https://contrib.rocks/image?repo=ts-animal/ts-animal" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
 
 ## Stay in touch
 E-mail - team.ts.animal@gmail.com
