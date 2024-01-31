@@ -3,6 +3,7 @@ import * as path from 'path';
 import { listHelper, SRC_FOLDER } from './helper/list.helper';
 import { IPrinter } from './abstract/printer.interface';
 import { OptionType } from './type/option.type';
+import { Colorizer } from './abstract/colorizer.middleware';
 
 export class AnimalGenerator {
   frames = [];
@@ -33,8 +34,14 @@ export class AnimalGenerator {
 
     const interval = setInterval(
       () => {
+        let currentFrame = this.frames[i % this.frames.length];
+
         this.printer.clearTerminal();
-        this.printer.print(this.frames[i % this.frames.length]);
+        this.printer.print(
+          this.option.color === 'random'
+            ? Colorizer.randomColorize(currentFrame)
+            : Colorizer.colorize(this.option.color, currentFrame),
+        );
         i++;
         if (
           this.option.repeat &&
