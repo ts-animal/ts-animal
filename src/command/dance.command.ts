@@ -12,6 +12,5 @@ export function dance(animal: string) {
   );
 
   generator.setFrames();
-  generator.setColor();
   generator.run();
 }

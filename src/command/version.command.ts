@@ -1,5 +1,8 @@
 import { version } from '../../package.json';
 
 export function v() {
-  console.log('v' + version);
+  const print = 'v' + version;
+  console.log(print);
+
+  return print;
 }

@@ -11,7 +11,7 @@ export class AnimalGenerator {
   constructor(
     private readonly animal: string,
     private readonly printer: IPrinter,
-    private readonly option: OptionType,
+    private readonly option?: OptionType,
   ) {
     if (!listHelper().includes(animal))
       throw new Error(`We don't know ${animal}`);

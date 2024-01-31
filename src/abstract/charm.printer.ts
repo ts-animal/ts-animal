@@ -1,7 +1,6 @@
-import * as Charm from 'charm';
+import Charm from 'charm';
 import { IPrinter } from './printer.interface';
 import { ColorType } from '../type/color.type';
-import { COLOR, getRandomColor } from '../helper/color.helper';
 
 export class CharmPrinter implements IPrinter {
   printer = Charm();
