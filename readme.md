@@ -20,6 +20,9 @@
 
 ```shell
 $ npm i -g ts-animal
+
+# or start with npx
+$ npx ts-animal dance tiger
 ```
 
 ## Getting started
