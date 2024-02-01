@@ -30,7 +30,7 @@ $ ts-animal dance tiger
 ## Options
 
 ```shell
-$ ts-animal dance tiger --repeat=3 --speed=1800
+$ ts-animal dance tiger --repeat=3 --speed=1800 --color=red
 ```
 
 <table>
