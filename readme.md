@@ -27,17 +27,6 @@ $ npm i -g ts-animal
 $ ts-animal dance tiger
 ```
 
-## Run locally with repository
-
-```shell
-$ pnpm i
-$ pnpm dance {animal}
-
-# ex
-$ pnpm dance tiger
-$ pnpm dance rabbit
-```
-
 ## Options
 
 ```shell
@@ -66,7 +55,7 @@ $ ts-animal dance tiger --repeat=3 --speed=1800
         </tr>
         <tr>
             <td>
-                <code>--repeat</code>
+                <code>--repeat</code>
             </td>
             <td>
                 Set how long to repeat the animation.
@@ -83,11 +72,22 @@ $ ts-animal dance tiger --repeat=3 --speed=1800
                 Set the color of the animation.
             </td>
             <td>
-                <code>white</code>
+                <code>white</code>
             </td>
         </tr>
     </tbody>
 </table>
+
+## Run locally with repository
+
+```shell
+$ pnpm i
+$ pnpm dance {animal}
+
+# ex
+$ pnpm dance tiger
+$ pnpm dance rabbit
+```
 
 ## How to contribute
 
