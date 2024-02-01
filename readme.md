@@ -12,8 +12,9 @@
 
 ## Our animals
 
-- tiger: https://asciiart.cc/view/12694
-- rabbit: https://bento.me/tolluset
+- 🐯 tiger: https://asciiart.cc/view/12694
+- 🐰 rabbit: https://bento.me/tolluset
+- 🐱 cat
 
 ## Installation
 
