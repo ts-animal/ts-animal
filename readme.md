@@ -54,25 +54,37 @@ $ ts-animal dance tiger --repeat=3 --speed=1800
     </thead>
     <tbody>
         <tr>
-            <td><code>--speed</code></td>
+            <td>
+                <code>--speed</code>
+            </td>
             <td>
                 Set the speed of frame of your animation.
             </td>
-            <td><code>1800</code></td>
+            <td>
+                <code>1800</code>
+            </td>
         </tr>
         <tr>
-            <td><code>--repeat</code></td>
+            <td>
+                <code>--repeat</code>
+            </td>
             <td>
                 Set how long to repeat the animation.
             </td>
-            <td><code>Infinity</code></td>
+            <td>
+                <code>Infinity</code>
+            </td>
         </tr>
         <tr>
-            <td><code>--color</code></td>
+            <td>
+                <code>--color</code>
+            </td>
             <td>
                 Set the color of the animation.
             </td>
-            <td><code>white</code></td>
+            <td>
+                <code>white</code>
+            </td>
         </tr>
     </tbody>
 </table>
