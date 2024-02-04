@@ -14,5 +14,6 @@ describe('Color Module', () => {
       .join(', ');
 
     expect(result).toMatch(colorKeys);
+    expect(result).toMatchSnapshot();
   });
 });
