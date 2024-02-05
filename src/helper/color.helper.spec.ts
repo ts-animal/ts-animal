@@ -1,4 +1,4 @@
-import { COLOR, getRandomColor, listColors } from '../helper/color.helper';
+import { getRandomColor, listColors } from '../helper/color.helper';
 
 describe('Color Module', () => {
   test('getRandomColor should return a valid color', () => {
@@ -8,12 +8,7 @@ describe('Color Module', () => {
 
   test('listColors should return a string with all colors', () => {
     const result = listColors();
-    const colorKeys = Object.keys(COLOR)
-      .filter((e) => e !== 'reset')
-      .map((e) => `${COLOR[e]}${e}${COLOR.reset}`)
-      .join(', ');
-
-    expect(result).toMatch(colorKeys);
+    expect(result).not.toBeNull();
     expect(result).toMatchSnapshot();
   });
 });
