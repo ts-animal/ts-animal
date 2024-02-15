@@ -125,6 +125,8 @@ $ pnpm script:publish
 
 ### ts-animal Devbox 
 > There is CodeSandbox where you can try out packages without global installation.
+> 1. fork the devbox
+> 2. use terminal
 - [https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn](https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn)
 <img src="https://github.com/ts-animal/ts-animal/assets/94776135/b09ac0a0-d98e-436a-b1e0-a82d17b3ec0a" width="400" />
 
