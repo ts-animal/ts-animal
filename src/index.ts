@@ -6,6 +6,7 @@ import { list } from './command/list.command';
 import { colors } from './command/colors.command';
 import { help } from './command/help.command';
 import { v } from './command/version.command';
+import { makeProgress } from './progress';
 
 const COMMAND: CommandType = process.argv[2] as CommandType;
 const ANIMAL = process.argv[3];
@@ -31,3 +32,5 @@ switch (COMMAND) {
     help();
     break;
 }
+
+export { makeProgress };
