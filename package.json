@@ -38,5 +38,9 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
-  "bin": "./src/index.js"
+  "bin": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./progress": "./src/progress/index.js"
+  }
 }
