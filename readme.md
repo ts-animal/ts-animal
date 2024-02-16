@@ -78,6 +78,34 @@ $ ts-animal dance tiger --repeat=3 --speed=1800 --color=red
     </tbody>
 </table>
 
+## ⭐️ Progress getting started
+
+```ts
+  const { update, done, show } = makeProgress({ animal: 'tiger', start: 30 });
+
+  show();
+
+  const something = () =>
+    new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(Math.round(Math.random()));
+      }, 1000);
+    });
+
+  (async () => {
+    const items = Array.from({ length: 50 });
+    for (const _ of items) {
+      const res = await something();
+      update();
+
+      if (res) {
+        done();
+        return;
+      }
+    }
+  })();
+
+
 ## 🏰 Run locally with repository
 
 ```shell
@@ -108,12 +136,6 @@ $ pnpm dance rabbit
   <img src="https://contrib.rocks/image?repo=ts-animal/ts-animal" />
 </a>
 
-<!--
-## How to publish
-
-````shell
-$ pnpm script:publish
-``` -->
 
 
 ## 🫶 Support
@@ -125,6 +147,8 @@ $ pnpm script:publish
 
 ### ts-animal Devbox 
 > There is CodeSandbox where you can try out packages without global installation.
+> 1. fork the devbox
+> 2. use terminal
 - [https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn](https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn)
 <img src="https://github.com/ts-animal/ts-animal/assets/94776135/b09ac0a0-d98e-436a-b1e0-a82d17b3ec0a" width="400" />
 
