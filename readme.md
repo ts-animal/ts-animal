@@ -11,7 +11,7 @@
 
 [`ts-animal`](https://www.npmjs.com/package/ts-animal) is a sophisticated Command Line Interface (CLI) package designed to showcase captivating ASCII animation art within the animal category. We invite you to immerse yourself in our TypeScript-powered animal world, where creativity meets technology. Welcome to a realm where animated artistry comes to life in the command line environment. 🌐🦁
 
-- [⭐️ ASCII Animal](https://github.com/ts-animal/ts-animal/edit/main/readme.md#%EF%B8%8F-getting-started-ascii-animal)
+- [⭐️ ASCII Animal](https://github.com/ts-animal/ts-animal/blob/main/readme.md#%EF%B8%8F-getting-started-ascii-animal)
 - [⭐️ Progress Bar
 ](https://github.com/ts-animal/ts-animal/blob/main/readme.md#%EF%B8%8F-getting-started-progress-bar)
 ## Installation
