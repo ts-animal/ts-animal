@@ -156,7 +156,7 @@ $ pnpm dance rabbit
 > 2. use terminal
 
 - [https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn](https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn)
-  <img src="https://github.com/ts-animal/ts-animal/assets/94776135/b09ac0a0-d98e-436a-b1e0-a82d17b3ec0a" width="400" />
+<img src="https://github.com/ts-animal/ts-animal/assets/94776135/b09ac0a0-d98e-436a-b1e0-a82d17b3ec0a" width="400" />
 
 ## 💌 Stay in touch
 
