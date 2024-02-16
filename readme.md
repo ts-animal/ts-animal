@@ -78,6 +78,34 @@ $ ts-animal dance tiger --repeat=3 --speed=1800 --color=red
     </tbody>
 </table>
 
+## ⭐️ Progress getting started
+
+```ts
+  const { update, done, show } = makeProgress({ animal: 'tiger', start: 30 });
+
+  show();
+
+  const something = () =>
+    new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(Math.round(Math.random()));
+      }, 1000);
+    });
+
+  (async () => {
+    const items = Array.from({ length: 50 });
+    for (const _ of items) {
+      const res = await something();
+      update();
+
+      if (res) {
+        done();
+        return;
+      }
+    }
+  })();
+
+
 ## 🏰 Run locally with repository
 
 ```shell
@@ -108,12 +136,6 @@ $ pnpm dance rabbit
   <img src="https://contrib.rocks/image?repo=ts-animal/ts-animal" />
 </a>
 
-<!--
-## How to publish
-
-````shell
-$ pnpm script:publish
-``` -->
 
 
 ## 🫶 Support
