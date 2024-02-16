@@ -80,31 +80,33 @@ $ ts-animal dance tiger --repeat=3 --speed=1800 --color=red
 
 ## ⭐️ Progress getting started
 
+Below example is showing how to add progress feature with your cli.
+
 ```ts
-  const { update, done, show } = makeProgress({ animal: 'tiger', start: 30 });
+const { update, done, show } = makeProgress({ animal: 'tiger', start: 30 });
 
-  show();
+show();
 
-  const something = () =>
-    new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(Math.round(Math.random()));
-      }, 1000);
-    });
+const something = () =>
+  new Promise((resolve) => {
+  setTimeout(() => {
+    resolve(Math.round(Math.random()));
+  }, 1000);
+});
 
-  (async () => {
-    const items = Array.from({ length: 50 });
-    for (const _ of items) {
-      const res = await something();
-      update();
+(async () => {
+  const items = Array.from({ length: 50 });
+  for (const _ of items) {
+    const res = await something();
+    update();
 
-      if (res) {
-        done();
-        return;
-      }
+    if (res) {
+      done();
+      return;
     }
-  })();
-
+  }
+})();
+```
 
 ## 🏰 Run locally with repository
 
