@@ -83,16 +83,18 @@ $ ts-animal dance tiger --repeat=3 --speed=1800 --color=red
 Below example is showing how to add progress feature with your cli.
 
 ```ts
+const { makeProgress } = require('ts-animal/progress');
+
 const { update, done, show } = makeProgress({ animal: 'tiger', start: 30 });
 
 show();
 
 const something = () =>
   new Promise((resolve) => {
-  setTimeout(() => {
-    resolve(Math.round(Math.random()));
-  }, 1000);
-});
+    setTimeout(() => {
+      resolve(Math.round(Math.random()));
+    }, 1000);
+  });
 
 (async () => {
   const items = Array.from({ length: 50 });
@@ -131,28 +133,30 @@ $ pnpm dance rabbit
 - 🐰 rabbit: https://bento.me/tolluset
 - 🐱 cat
 
-
 ## 🤖 Contributors
 
 <a href="https://github.com/ts-animal/ts-animal/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ts-animal/ts-animal" />
 </a>
 
-
-
 ## 🫶 Support
 
-### ascii-animal generator 
-> We have GPTs that help us draw ASCII art.
-- https://chat.openai.com/g/g-e3MZC7wjL-ascii-animal-generator
-<img src="https://github.com/ts-animal/ts-animal/assets/94776135/eb1298c1-b1f2-409e-9059-2f5c8854257c" width="300" />
+### ascii-animal generator
 
-### ts-animal Devbox 
+> We have GPTs that help us draw ASCII art.
+
+- https://chat.openai.com/g/g-e3MZC7wjL-ascii-animal-generator
+  <img src="https://github.com/ts-animal/ts-animal/assets/94776135/eb1298c1-b1f2-409e-9059-2f5c8854257c" width="300" />
+
+### ts-animal Devbox
+
 > There is CodeSandbox where you can try out packages without global installation.
+>
 > 1. fork the devbox
 > 2. use terminal
+
 - [https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn](https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn)
-<img src="https://github.com/ts-animal/ts-animal/assets/94776135/b09ac0a0-d98e-436a-b1e0-a82d17b3ec0a" width="400" />
+  <img src="https://github.com/ts-animal/ts-animal/assets/94776135/b09ac0a0-d98e-436a-b1e0-a82d17b3ec0a" width="400" />
 
 ## 💌 Stay in touch
 
@@ -161,4 +165,3 @@ E-mail - team.ts.animal@gmail.com
 ## 💎 License
 
 ts-animal with [MIT licensed](LICENSE).
-
