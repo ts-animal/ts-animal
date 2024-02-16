@@ -10,6 +10,9 @@
 
 [`ts-animal`](https://www.npmjs.com/package/ts-animal) is a sophisticated Command Line Interface (CLI) package designed to showcase captivating ASCII animation art within the animal category. We invite you to immerse yourself in our TypeScript-powered animal world, where creativity meets technology. Welcome to a realm where animated artistry comes to life in the command line environment. 🌐🦁
 
+- [⭐️ ASCII Animal](https://github.com/ts-animal/ts-animal/edit/main/readme.md#%EF%B8%8F-getting-started-ascii-animal)
+- ⭐️ Progress Bar
+
 ## Installation
 
 > If you want to try it out before installing globally, you can (1) start with npx (2) or check out [codesandbox](https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn)
@@ -21,7 +24,7 @@ $ npm i -g ts-animal
 $ npx ts-animal dance tiger
 ```
 
-## ⭐️ Getting started
+## ⭐️ Getting started: ASCII Animal
 
 ```shell
 $ ts-animal dance tiger
@@ -78,7 +81,7 @@ $ ts-animal dance tiger --repeat=3 --speed=1800 --color=red
     </tbody>
 </table>
 
-## ⭐️ Progress getting started
+## ⭐️ Getting started: Progress Bar
 
 Below example is showing how to add progress feature with your cli.
 
@@ -132,6 +135,7 @@ $ pnpm dance rabbit
 - 🐯 tiger: https://asciiart.cc/view/12694
 - 🐰 rabbit: https://bento.me/tolluset
 - 🐱 cat
+- 🐾 bear-sleeping, bunny-angry, cat-coffee, rabbit-blink, sheep-fire : GPTs
 
 
 ## 🤖 Contributors
@@ -139,7 +143,6 @@ $ pnpm dance rabbit
 <a href="https://github.com/ts-animal/ts-animal/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ts-animal/ts-animal" />
 </a>
-
 
 
 ## 🫶 Support
