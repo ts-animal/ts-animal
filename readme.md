@@ -4,15 +4,16 @@
 [![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=ts-animal&query=$.install.pretty&label=install%20size&style=square)](https://packagephobia.now.sh/result?p=ts-animal)
 [![npm downloads](https://img.shields.io/npm/dm/ts-animal.svg?style=square)](https://npm-stat.com/charts.html?package=ts-animal)
 
-<img src="https://github.com/ts-animal/ts-animal/assets/33365719/48218f8c-2bbc-41fc-845f-dcf6914ad0bd" width="500">
+<img src="https://github.com/ts-animal/ts-animal/assets/94776135/6b4b2f0b-1a2d-480f-bfad-39f56a932fa3" width="600">
+
 
 ## 🤹‍♀️ Introduction
 
 [`ts-animal`](https://www.npmjs.com/package/ts-animal) is a sophisticated Command Line Interface (CLI) package designed to showcase captivating ASCII animation art within the animal category. We invite you to immerse yourself in our TypeScript-powered animal world, where creativity meets technology. Welcome to a realm where animated artistry comes to life in the command line environment. 🌐🦁
 
 - [⭐️ ASCII Animal](https://github.com/ts-animal/ts-animal/edit/main/readme.md#%EF%B8%8F-getting-started-ascii-animal)
-- ⭐️ Progress Bar
-
+- [⭐️ Progress Bar
+](https://github.com/ts-animal/ts-animal/blob/main/readme.md#%EF%B8%8F-getting-started-progress-bar)
 ## Installation
 
 > If you want to try it out before installing globally, you can (1) start with npx (2) or check out [codesandbox](https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn)
@@ -135,7 +136,7 @@ $ pnpm dance rabbit
 - 🐯 tiger: https://asciiart.cc/view/12694
 - 🐰 rabbit: https://bento.me/tolluset
 - 🐱 cat
-- 🐾 bear-sleeping, bunny-angry, cat-coffee, rabbit-blink, sheep-fire : GPTs
+- 🐾 bear-sleeping, bunny-angry, cat-coffee, rabbit-blink, sheep-fire : [ascii-animal-generator GPTs](https://chat.openai.com/g/g-e3MZC7wjL-ascii-animal-generator)
 
 
 ## 🤖 Contributors
