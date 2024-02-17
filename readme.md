@@ -4,12 +4,16 @@
 [![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=ts-animal&query=$.install.pretty&label=install%20size&style=square)](https://packagephobia.now.sh/result?p=ts-animal)
 [![npm downloads](https://img.shields.io/npm/dm/ts-animal.svg?style=square)](https://npm-stat.com/charts.html?package=ts-animal)
 
-<img src="https://github.com/ts-animal/ts-animal/assets/33365719/48218f8c-2bbc-41fc-845f-dcf6914ad0bd" width="500">
+<img src="https://github.com/ts-animal/ts-animal/assets/94776135/6b4b2f0b-1a2d-480f-bfad-39f56a932fa3" width="600">
+
 
 ## 🤹‍♀️ Introduction
 
 [`ts-animal`](https://www.npmjs.com/package/ts-animal) is a sophisticated Command Line Interface (CLI) package designed to showcase captivating ASCII animation art within the animal category. We invite you to immerse yourself in our TypeScript-powered animal world, where creativity meets technology. Welcome to a realm where animated artistry comes to life in the command line environment. 🌐🦁
 
+- [⭐️ ASCII Animal](https://github.com/ts-animal/ts-animal/blob/main/readme.md#%EF%B8%8F-getting-started-ascii-animal)
+- [⭐️ Progress Bar
+](https://github.com/ts-animal/ts-animal/blob/main/readme.md#%EF%B8%8F-getting-started-progress-bar)
 ## Installation
 
 > If you want to try it out before installing globally, you can (1) start with npx (2) or check out [codesandbox](https://codesandbox.io/p/devbox/ts-animal-devbox-j4c3tn)
@@ -21,13 +25,13 @@ $ npm i -g ts-animal
 $ npx ts-animal dance tiger
 ```
 
-## ⭐️ Getting started
+## ⭐️ Getting started: ASCII Animal
 
 ```shell
 $ ts-animal dance tiger
 ```
 
-## 🔍 Options
+## 🔍 Options: ASCII Animal
 
 ```shell
 $ ts-animal dance tiger --repeat=3 --speed=1800 --color=red
@@ -78,12 +82,14 @@ $ ts-animal dance tiger --repeat=3 --speed=1800 --color=red
     </tbody>
 </table>
 
-## ⭐️ Progress getting started
+## ⭐️ Getting started: Progress Bar
 
 Below example is showing how to add progress feature with your cli.
 
 ```ts
-const { update, done, show } = makeProgress({ animal: 'tiger', start: 30 });
+const { makeProgress } = require("ts-animal/progress");
+
+const { update, done, show } = makeProgress({ animal: 'tiger', start: 30, displayBar: true });
 
 show();
 
@@ -108,6 +114,75 @@ const something = () =>
 })();
 ```
 
+## 🔍 Options: Progress
+
+```javascript
+const { makeProgress } = require("ts-animal/progress");
+
+const { update, done, show } = makeProgress({ 
+    animal: 'tiger',
+    start: 0,
+    end: 100,
+    displayBar: true 
+});
+```
+
+<table>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code>animal</code>
+            </td>
+            <td>
+                Set animal to be displayed among our zoo.
+            </td>
+            <td>
+                <code>'tiger'</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>start</code>
+            </td>
+            <td>
+                Set start point of progress bar.
+            </td>
+            <td>
+                <code>0</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>end</code>
+            </td>
+            <td>
+                Set end point of progress bar.
+            </td>
+            <td>
+                <code>100</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>displayBar</code>
+            </td>
+            <td>
+                Set whether progress bar will be displayed or not.
+            </td>
+            <td>
+                <code>true</code>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 ## 🏰 Run locally with repository
 
 ```shell
@@ -130,6 +205,7 @@ $ pnpm dance rabbit
 - 🐯 tiger: https://asciiart.cc/view/12694
 - 🐰 rabbit: https://bento.me/tolluset
 - 🐱 cat
+- 🐾 bear-sleeping, bunny-angry, cat-coffee, rabbit-blink, sheep-fire : [ascii-animal-generator GPTs](https://chat.openai.com/g/g-e3MZC7wjL-ascii-animal-generator)
 
 
 ## 🤖 Contributors
@@ -137,7 +213,6 @@ $ pnpm dance rabbit
 <a href="https://github.com/ts-animal/ts-animal/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ts-animal/ts-animal" />
 </a>
-
 
 
 ## 🫶 Support
