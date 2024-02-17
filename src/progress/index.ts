@@ -37,12 +37,14 @@ export function makeProgress({
   controlled = false,
   start = 0,
   end = 100,
+  displayBar = true,
   animal = 'tiger',
   option = new OptionType(),
 }: {
   controlled?: boolean;
   start?: number;
   end?: number;
+  displayBar: boolean;
   animal?: string;
   option?: OptionType;
 }): { update(): void; done(): void; show(): void } {
@@ -80,11 +82,15 @@ export function makeProgress({
         ? Colorizer.randomColorize(currentFrame)
         : Colorizer.colorize(option.color, currentFrame),
     );
-    printer.print('\n');
-    printer.print('loading... \n');
-    printer.print('[');
-    printer.print('䷢'.repeat(progress).padEnd(end, ' '));
-    printer.print(']');
+
+    if (displayBar) {
+      printer.print('\n');
+      printer.print('loading... \n');
+      printer.print('[');
+      printer.print('䷢'.repeat(progress).padEnd(end, ' '));
+      printer.print(']');
+    }
+
     printer.print(' ' + progress + '%');
     printer.print('\n');
 
