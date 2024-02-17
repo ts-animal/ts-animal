@@ -31,7 +31,7 @@ $ npx ts-animal dance tiger
 $ ts-animal dance tiger
 ```
 
-## 🔍 Options
+## 🔍 Options: ASCII Animal
 
 ```shell
 $ ts-animal dance tiger --repeat=3 --speed=1800 --color=red
@@ -89,7 +89,7 @@ Below example is showing how to add progress feature with your cli.
 ```ts
 const { makeProgress } = require("ts-animal/progress");
 
-const { update, done, show } = makeProgress({ animal: 'tiger', start: 30 });
+const { update, done, show } = makeProgress({ animal: 'tiger', start: 30, displayBar: true });
 
 show();
 
@@ -113,6 +113,75 @@ const something = () =>
   }
 })();
 ```
+
+## 🔍 Options: Progress
+
+```javascript
+const { makeProgress } = require("ts-animal/progress");
+
+const { update, done, show } = makeProgress({ 
+    animal: 'tiger',
+    start: 0,
+    end: 100,
+    displayBar: true 
+});
+```
+
+<table>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code>animal</code>
+            </td>
+            <td>
+                Set animal to be displayed among our zoo.
+            </td>
+            <td>
+                <code>'tiger'</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>start</code>
+            </td>
+            <td>
+                Set start point of progress bar.
+            </td>
+            <td>
+                <code>0</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>end</code>
+            </td>
+            <td>
+                Set end point of progress bar.
+            </td>
+            <td>
+                <code>white</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>displayBar</code>
+            </td>
+            <td>
+                Set whether progress bar will be displayed or not.
+            </td>
+            <td>
+                <code>true</code>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## 🏰 Run locally with repository
 
