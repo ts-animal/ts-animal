@@ -1,6 +1,6 @@
 {
   "name": "ts-animal",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "ts-animal is a sophisticated Command Line Interface (CLI) package designed to showcase captivating ASCII animation art within the animal category. We invite you to immerse yourself in our TypeScript-powered animal world, where creativity meets technology. Welcome to a realm where animated artistry comes to life in the command line environment. 🌐🦁",
   "main": "src/index.ts",
   "scripts": {
