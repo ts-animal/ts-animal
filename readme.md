@@ -180,6 +180,17 @@ const { update, done, show } = makeProgress({
                 <code>true</code>
             </td>
         </tr>
+        <tr>
+            <td>
+                <code>displayAnimal</code>
+            </td>
+            <td>
+                Set whether animal animation will be displayed or not.
+            </td>
+            <td>
+                <code>true</code>
+            </td>
+        </tr>
     </tbody>
 </table>
 
