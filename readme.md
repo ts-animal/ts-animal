@@ -166,7 +166,7 @@ const { update, done, show } = makeProgress({
                 Set end point of progress bar.
             </td>
             <td>
-                <code>white</code>
+                <code>100</code>
             </td>
         </tr>
         <tr>
